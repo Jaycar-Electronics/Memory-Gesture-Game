@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "memory\\memory.ino",
+    "port": "COM89"
+}
