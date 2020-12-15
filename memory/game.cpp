@@ -3,6 +3,8 @@
 //#include "paj7620.h"
 #include "title.h"
 
+#define ITOA(x) (char)(x + (x > 9 ? 'A' - 10 : '0'))
+
 MemoryGame::MemoryGame()
 {
   //Constructor, doesn't do much
@@ -111,7 +113,7 @@ bool MemoryGame::playGameLevel()
     oled->drawBox(0, 0, BAR_CHUNK * (MAX_ERRORS - errorCount), 8);
     oled->setFont(u8g2_font_logisoso28_tr);
     oled->setCursor(0, 64);
-    oled->print((char)('1' + i));
+    oled->print(ITOA(i+1));
     oled->sendBuffer();
 
     //prepare bar for next scene
@@ -251,10 +253,10 @@ void MemoryGame::showGameLevel()
 
     oled->setFont(u8g2_font_logisoso28_tr);
     oled->setCursor(0, 64);
-    oled->print((char)('1' + i));
+    oled->print(ITOA(i+1));
     oled->sendBuffer();
 
-    delay(500 - BASE_SPEED * playerLevel);
+    delay(500 + (1000 - BASE_SPEED * playerLevel));
   }
   showGoCard();
   delay(1000);

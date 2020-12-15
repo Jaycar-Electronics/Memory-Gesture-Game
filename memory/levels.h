@@ -3,7 +3,7 @@
 
 #include "paj7620.h"
 #define FINISHED 0
-#define TOTAL_LEVELS 2
+#define TOTAL_LEVELS 5
 /************************************************
 
 Note:
@@ -30,8 +30,47 @@ const uint8_t level2[] PROGMEM = {
     GES_DOWN_FLAG,
     FINISHED};
 
+const uint8_t level3[] PROGMEM = {
+    GES_RIGHT_FLAG,
+    GES_LEFT_FLAG,
+    GES_UP_FLAG,
+    GES_LEFT_FLAG,
+    GES_UP_FLAG,
+    GES_CLOCKWISE_FLAG,
+    FINISHED};
+
+const uint8_t level4[] PROGMEM = {
+    GES_LEFT_FLAG,
+    GES_LEFT_FLAG,
+    GES_LEFT_FLAG,
+    GES_LEFT_FLAG,
+    GES_CLOCKWISE_FLAG,
+    GES_COUNT_CLOCKWISE_FLAG,
+    GES_CLOCKWISE_FLAG,
+    GES_COUNT_CLOCKWISE_FLAG,
+    FINISHED};
+
+const uint8_t level5[] PROGMEM = {
+    GES_UP_FLAG,
+    GES_RIGHT_FLAG,
+    GES_CLOCKWISE_FLAG,
+    GES_COUNT_CLOCKWISE_FLAG,
+    GES_UP_FLAG,
+    GES_RIGHT_FLAG,
+    GES_COUNT_CLOCKWISE_FLAG,
+    GES_CLOCKWISE_FLAG,
+    GES_LEFT_FLAG,
+    GES_RIGHT_FLAG,
+    GES_LEFT_FLAG,
+    GES_UP_FLAG,
+    GES_DOWN_FLAG,
+    FINISHED};
+
 const uint8_t *const levels[TOTAL_LEVELS] PROGMEM = {
     level1,
-    level2};
+    level2,
+    level3,
+    level4,
+    level5};
 
 #endif
