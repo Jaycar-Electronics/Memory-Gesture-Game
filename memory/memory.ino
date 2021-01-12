@@ -33,6 +33,11 @@ void setup()
   game->showTitleCard();
   DEBUG("Blocking");
   game->blockUntilGesture();
+
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  digitalWrite(7,LOW);
+  digitalWrite(6, HIGH);
 }
 
 void loop()
