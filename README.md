@@ -37,7 +37,7 @@ We had to work this code a little bit to make it fit on the UNO, if there's any 
 ## How to build
 
 <div id='instructions'>
-For full build instructions, check out the website: https://jaycar.com.au/memory-gesture-game
+For full build instructions, check out the website: https://www.jaycar.com.au/gesture-memory-game
 </div>
 
 ## How to use
