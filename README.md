@@ -4,7 +4,7 @@ This project is all about creating a simple game to test your memory.
 
 Using the well-known gesture sensor module ([XC3742](https://jaycar.com.au/p/XC3742)) and OLED Screen ([XC3728](https://jaycar.com.au/p/XC3728)) it will show patterns on the screen comprising of left, up, right, down, circle, and wave; try to match the patterns with your own hand! First level is short and easy to follow but it will get progressively faster and more complicated as you advance through the levels.
 
-![animation](doc/images/work.gif)
+![animation](docs/images/work.gif)
 
 Play this game with your friends and see how far you can get.
 
@@ -44,7 +44,7 @@ For full build instructions, check out the website: https://jaycar.com.au/memory
 
 When you're on the title screen; wipe your hand over it to start the game.
 
-![title screen](doc/images/title.jpg)
+![title screen](docs/images/title.jpg)
 
 It will then show you a pattern that you must memorise; after the pattern it will display "GO!" and you must replicate the pattern using the gesture sensor. You can make 5 mistakes for the entire length of the pattern, then it's game over; otherwise you move to the next level, which is a little faster, and longer, than the last.
 
